@@ -1,0 +1,1002 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+ul,ol{
+  list-style-type: none;
+}
+img{
+  vertical-align: middle;
+  border: 0;
+}
+/* font-family: 'Arimo', sans-serif;
+font-family: 'Roboto', sans-serif; */
+@font-face{
+  src: url(../fonts/droid-serif.bold.ttf);
+  font-family: dsb;
+}
+@font-face{
+  src: url(../fonts/droid-serif.regular.ttf);
+  font-family: dsr;
+}
+
+/* ================================================================================================
+                                        Sub Navbar Part Css
+================================================================================================= */
+#sub-navbar{
+  background: #151414;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sub-social-icon span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #aaaaaa;
+  padding-right: 20px;
+}
+.sub-social-icon a i{
+  color: #aaaaaa;
+  padding-right: 15px;
+  font-size: 14px;
+  transition: all linear .3s;
+}
+.sub-social-icon a i:hover{
+  color: #119ee6;
+}
+.phone{
+  position: relative;
+  top: 0;
+  right: -47px;
+}
+.phone i{
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.phone a{
+  color: #aaaaaa;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.mail{
+  position: relative;
+}
+.mail::after{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 30px;
+  top: 0;
+  left: 47px;
+  background: rgb(170, 170, 170,0.5);
+}
+.mail i{
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-right: 5px;
+}
+.mail a{
+  color: #aaaaaa;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ========================================================================================================
+                                                 Navbar Part Css
+========================================================================================================== */
+.navbar{
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background: #f9f9f9;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #222222;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  transition: all linear .3s;
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color: #119ee6;
+  font-family: 'Arimo', sans-serif;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-light .navbar-nav .nav-link::before{
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 2px;
+  top: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #119ee6;
+  opacity: 0;
+  transition: all linear .3s;
+}
+.navbar-light .navbar-nav .nav-link:hover::before{
+  opacity: 1;
+  width: 100%;
+}
+.user{
+  border: 2px solid #000000;
+  border-radius: 50%;
+  margin-left: 15px;
+  position: relative;
+  bottom: -50px;
+  z-index: 99;
+}
+.user::after{
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 35px;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #dcdcdc;
+}
+.mr2 a i{
+  color: #ffffff;
+  background: #119ee6;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.mr2{
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+}
+.cart a i{
+  color: #000000;
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+/* ==============================================================================================================
+                                                   Banner Part Css
+================================================================================================================ */
+#banner{
+  background: #f2f2f2;
+  position: relative;
+}
+.banner-bg{
+  position: relative;
+  z-index: 999;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.banner-btn i{
+  color: #fff;
+  font-size: 25px;
+  padding: 40px 15px;
+  background: #119ee6;
+  cursor: pointer;
+}
+.left{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.right{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.banner-content h1{
+  color: #000000;
+  font-size: 47px;
+  font-family: dsb;
+  line-height: 68px;
+}
+.banner-content p{
+  color: #555555;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: justify;
+  margin-top: 30px;
+  padding-bottom: 45px;
+}
+.more-btn a{
+  font-family: dsr;
+  font-size: 18px;
+  color: #ffffff;
+  background: #119ee6;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+.more-btn a i{
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+/* ============================================================================================
+                                           Service Part Css
+============================================================================================== */
+.service-item{
+  background: #119ee6;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: all linear .3s;
+}
+.mr3{
+  border: 2px solid #000000;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  top: -30px;
+  transition: all linear .3s;
+}
+.icon{
+  border: 5px solid #fff;
+  display: inline-block;
+  border-radius: 50%;
+}
+.icon-img i{
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background: #119ee6;
+  border-radius: 50%;
+  line-height: 45px;
+  font-size: 24px;
+  color: #fff;
+  transition: all linear .3s;
+}
+.service-item h6{
+  font-family: dsb;
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 15px;
+  transition: all linear .3s;
+}
+.service-item p{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  padding-bottom: 15px;
+  transition: all linear .3s;
+}
+.service-btn{
+  transition: all linear .3s;
+  opacity: 0;
+}
+.service-btn a{
+  font-family: dsr;
+  font-size: 14px;
+  color: #119ee6;
+}
+.service-btn a i{
+  margin-left: 5px;
+}
+.service-item:hover{
+  background: #ffffff;
+  transform: translateY(-40px);
+}
+.service-item:hover .mr3{
+  border: 2px solid #119ee6;
+}
+.service-item:hover .icon-img i{
+  background: #000000;
+}
+.service-item:hover h6{
+  color: #222222;
+}
+.service-item:hover p{
+  color: #555555;
+}
+.service-item:hover .service-btn{
+  opacity: 1;
+}
+/* ===========================================================================================================
+                                                Domain Name Part Css
+============================================================================================================= */
+#domain-name{
+  background: url(../images/domain-name.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.common-title{
+  margin-bottom: 60px;
+}
+.common-title p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+}
+.common-title h6{
+  font-size: 36px;
+  font-family: dsb;
+  color: #fff;
+}
+.domain-price{
+  margin-bottom: 60px;
+}
+.domain-price p{
+  color: #ffffff;
+  font-family: dsb;
+  font-size: 18px;
+}
+.domain-price span{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+.search-domain{
+  border: 10px solid #119ee6;
+  margin-bottom: 50px;
+}
+.search-domain .form-control{
+  border-radius: 0;
+  font-family: dsr;
+  font-size: 14px;
+  color: #555555;
+  border: 0;
+  height: calc(2.5rem + 5px);
+  background: #fff;
+}
+.search-domain .form-control::placeholder{
+  padding-left: 15px;
+}
+.search-domain .mr4{
+  width: 91%;
+  background: #000000;
+  color: #cccccc;
+  font-family: dsr;
+  font-size: 14px;
+}
+.search-domain .form-control:focus{
+  box-shadow: none;
+}
+.domain-search-btn .btn{
+  font-size: 18px;
+  font-family: dsr;
+  border-radius: 5px;
+  padding: 8px 30px;
+  background: #119ee6;
+}
+
+/* ========================================================================================
+                                       Feature Part Css
+=========================================================================================== */
+#feature{
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.mr5 p{
+  color: #999999;
+}
+.mr5 h6{
+  color: #222222;
+}
+.feature-item{
+  margin-bottom: 60px;
+}
+.feature-icon i{
+  font-size: 30px;
+  color: #119ee6;
+  margin-bottom: 40px;
+  position: relative;
+}
+.feature-icon i::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -15px;
+  width: 60px;
+  height: 1px;
+  background: #119ee6;
+}
+.feature-item h6{
+  font-family: dsb;
+  font-size: 18px;
+  color: #222222;
+  padding-bottom: 25px;
+}
+.feature-item p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #444444;
+  line-height: 24px;
+}
+
+/* =================================================================================================
+                                              Pricing Part Css
+=================================================================================================== */
+#pricing{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #f9f9f9;
+}
+.pricing-details{
+  box-shadow: 1px 0 10px rgba(0, 0, 0,0.05);
+}
+.pricing-title{
+  padding-top: 30px;
+  background: #000000;
+  padding-bottom: 50px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.mr6{
+  background: #119ee6;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-title h6{
+  font-size: 18px;
+  font-family: dsb;
+  color: #fff;
+}
+.pricing-title p{
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.pricing-title span{
+  color: #fff;
+  font-family: dsb;
+  font-size: 30px;
+}
+.pricing-icon i{
+  color: #fff;
+  font-size: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #000000;
+  line-height: 100px;
+  position: relative;
+  top: -50px;
+}
+.mr7 i{
+  background: #119ee6;
+}
+.pricing-icon i::after{
+  position: absolute;
+  content: '';
+  left: 6px;
+  bottom: 4px;
+  width: 88px;
+  height: 35px;
+  background: url(../images/p1.png);
+}
+.pricing-item{
+  background: #ffffff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-bottom: 35px;
+}
+.pricing-item ul li{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #999999;
+  line-height: 36px;
+}
+.pricing-item ul li i{
+  margin-right: 8px;
+  color: #119ee6;
+}
+.order{
+  padding-top: 10px;
+}
+.order a{
+  font-family: dsb;
+  font-size: 18px;
+  color: #fff;
+  background: #119ee6;
+  padding: 10px 20px;
+  border-radius: 3px;
+  transition: all linear .3s;
+}
+.order a:hover{
+  background: #000000;
+}
+.mr6 h5{
+  font-family: dsb;
+  color: #119ee6;
+  font-size: 14px;
+  display: inline-block;
+  background: #ffffff;
+  padding: 10px 45px;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  transform: rotate(-45deg);
+}
+
+/* ================================================================================================
+                                          Funfact Part Css
+================================================================================================== */
+#fun-fact{
+  background: #020202;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+.funfact-item{
+  position: relative;
+}
+.mr8{
+  position: relative;
+}
+.mr8::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -35px;
+  width: 3px;
+  height: 100px;
+  background: rgb(17, 158, 230,0.2);
+  transform: rotate(25deg);
+}
+.mr9{
+  margin-left: 85px;
+}
+.funfact-item h6{
+  font-family: dsr;
+  font-size: 24px;
+  color: #fff;
+}
+.funfact-item span{
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.funfact-item i{
+  color: rgb(255, 255, 255,0.05);
+  font-size: 72px;
+  position: absolute;
+  top: -19px;
+  left: 0;
+}
+
+/* ==============================================================================================
+                                        Offer Part Css
+================================================================================================= */
+#offer{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #f9f9f9;
+}
+.nav{
+  justify-content: center;
+}
+.package-tabs .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #119ee6;
+  background-color: #fff;
+  border-bottom: 2px solid #119ee6;
+  border-radius: 0;
+}
+.package-tabs .nav-link{
+  border: 1px solid #eeeeee;
+  border-radius: 0;
+  color: #999999;
+  background: #fff;
+  padding: 20px 45px;
+  font-size: 30px;
+}
+.tooltip{
+  font-family: dsr;
+  font-size: 14px;
+  color: #fff;
+}
+.tooltip .tooltip-inner {
+  background-color: #119ee6;
+  border-radius: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.tab-pane{
+  box-shadow: 1px 0 20px rgba(0,0,0,0.05);
+  padding: 60px 0;
+  border-radius: 5px;
+  background: #fff;
+  margin-top: 90px;
+}
+
+.offer-tab-content h6{
+  font-family: dsb;
+  font-size: 24px;
+  color: #000000;
+}
+.offer-tab-content p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555555;
+  line-height: 24px;
+}
+.offer-tab-content h5{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #999999;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 24px;
+  border-left: 2px solid #eeeeee;
+  padding-left: 15px;
+}
+.offer-tab-content a{
+  font-family: dsr;
+  font-size: 16px;
+  color: #119ee6;
+  padding-top: 10px;
+}
+.offer-tab-content a i{
+  margin-left: 5px;
+}
+
+/* =================================================================================================
+                                          Choose Part Css
+=================================================================================================== */
+#choose{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.choose-item{
+  padding: 186px 30px;
+  background: #119ee6;
+  transition: all linear .3s;
+}
+.choose-item:hover{
+  background: #000000;
+}
+.choose-inner-item{
+  position: relative;
+}
+.choose-inner-item i{
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.choose-inner-item h6{
+  color: #fff;
+  font-family: dsb;
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+.choose-inner-item p{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.choose-inner-item h5{
+  font-size: 78px;
+  font-family: dsb;
+  color: rgb(255, 255, 255,0.1);
+  position: absolute;
+  top: -17px;
+  left: 0;
+  transition: all linear .3s;
+}
+.choose-item:hover .choose-inner-item h5{
+  color: rgb(255, 255, 255,0.2);
+}
+
+.choose-items{
+  padding: 50px 29px;
+  background: #119ee6;
+  transition: all linear .3s;
+}
+.choose-items:hover{
+  background: #000000;
+}
+.choose-inner-items{
+  position: relative;
+}
+.choose-inner-items i{
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.choose-inner-items h6{
+  color: #fff;
+  font-family: dsb;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+.choose-inner-items p{
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.choose-inner-items h5{
+  font-size: 78px;
+  font-family: dsb;
+  color: rgb(255, 255, 255,0.1);
+  position: absolute;
+  top: -17px;
+  right: -13px;
+  transition: all linear .3s;
+}
+.choose-items:hover .choose-inner-items h5{
+  color: rgb(255, 255, 255,0.2);
+}
+.mr11{
+  margin-bottom: 15px;
+}
+
+/* =======================================================================================================
+                                                   Testimonial Part Css
+========================================================================================================= */
+#client{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #f9f9f9;
+}
+.client-item{
+  position: relative;
+  z-index: 99;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+.client-item h6{
+  font-size: 24px;
+  font-family: dsb;
+  color: #222222;
+  padding-bottom: 15px;
+}
+.client-icon{
+  margin-bottom: 25px;
+}
+.client-icon i{
+  font-size: 18px;
+  color: #dddddd;
+}
+.client-item p{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #555555;
+  line-height: 24px;
+  border-left: 1px solid #119ee6;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+.client-item h5{
+  font-size: 16px;
+  font-family: dsr;
+  color: #222222;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.client-item span{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #555555;
+  font-weight: 300;
+}
+.quota i{
+  font-size: 48px;
+  color: #dddddd;
+  position: absolute;
+  top: -23px;
+  left: 0;
+  z-index: -1;
+}
+.arrow a i{
+  font-size: 24px;
+  color: #222222;
+  margin: 0 8px;
+  transition: all linear .3s;
+}
+.arrow a i:hover{
+  color: #119ee6;
+}
+.arrow a:nth-of-type(1)::after{
+  position: relative;
+  content: '/';
+  right: -4px;
+  top: -4px;
+  color: #515151;
+}
+
+/* ================================================================================================
+                                           Contact Part Css
+=================================================================================================== */
+#contact{
+  background: #f9f9f9;
+}
+.contact-bg{
+  background: #119ee6;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.contact-icon i{
+  font-size: 36px;
+  color: #ffffff;
+}
+.contact-details h6{
+  font-family: dsr;
+  color: #ffffff;
+  font-size: 24px;
+}
+.contact-details p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+/* ===============================================================================================
+                                          Footer Part Css
+================================================================================================= */
+#footer{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #151414;
+  border-bottom: 1px solid #555555;
+}
+.footer-item img{
+  margin-bottom: 40px;
+}
+.footer-item p{
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.footer-item a{
+  color: #cccccc;
+  font-size: 14px;
+  font-family: dsr;
+}
+.footer-item a i{
+  margin-left: 5px;
+}
+.footer-social-icon{
+  margin-top: 25px;
+}
+.footer-social-icon span{
+  color: #777777;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.footer-social-icon a{
+  color: #777777;
+  font-size: 14px;
+  margin-left: 4px;
+  transition: all linear .3s;
+}
+.footer-social-icon a:hover{
+  color: #119ee6;
+}
+.footer-link h6{
+  font-family: dsb;
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 40px;
+}
+.footer-link ul li{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #999999;
+  transition: all linear .3s;
+}
+.footer-link ul li:hover{
+  color: #119ee6;
+}
+.footer-link ul li i{
+  color: #fff;
+  margin-right: 10px;
+  transition: all linear .3s;
+}
+.footer-link ul li:hover i{
+  color: #119ee6;
+}
+.mr12{
+  margin-bottom: 11px;
+}
+.mr13{
+  margin-left: 20px;
+}
+.footer-link p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #999999;
+  font-weight: 300;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+.email .form-control{
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+  height: calc(2.29rem + 2px);
+}
+.email .form-control:focus{
+  box-shadow: none;
+}
+.email .form-control::placeholder{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #999999;
+}
+.email{
+  border: 3px solid #fff;
+}
+.email .btn{
+  font-family: dsb;
+  font-size: 14px;
+  color: #fff;
+  background: #119ee6;
+  border-radius: 0;
+  border: 0;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.email .btn:focus{
+  box-shadow: none;
+}
+.mr14{
+  position: relative;
+  right: 11px;
+}
+.footer-link h5{
+  font-family: dsr;
+  font-size: 14px;
+  color: #fff;
+  padding: 25px 0;
+}
+.carts a i{
+  color: #e3e3e3;
+  font-size: 44px;
+  transition: all linear .3s;
+}
+.carts a i:hover{
+  color: #119ee6;
+}
+
+/* =========================================================================================
+                                         Footer Bottom Part Css
+=========================================================================================== */
+#footer-bottom{
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background: #151414;
+}
+.footer-bottom h6{
+  font-size: 16px;
+  font-family: dsr;
+  color: #999999;
+}
